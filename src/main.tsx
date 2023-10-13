@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         element: <Checkout />,
       },
       {
-        path: "/nike-clone/product-detail/product-1",
+        path: "/nike-clone/product-detail/:productID",
         element: <ProductDetail />,
       },
       // {
@@ -42,6 +42,8 @@ const router = createBrowserRouter([
     ]
   }
 ]);
+
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <RouterProvider router={router}/>

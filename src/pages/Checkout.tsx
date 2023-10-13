@@ -185,7 +185,7 @@ const Checkout = () => {
                           }
                         }}
                       >
-                        <img src='./img/paypal.png' width={55} />
+                        <img src='img/paypal.webp' width={55} />
                       </Button>
                     </Box>
                   </Grid>

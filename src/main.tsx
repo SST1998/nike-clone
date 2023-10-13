@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import AllProduct from './pages/AllProduct';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
+import NotFound from './pages/NotFound';
+import ProductDetail from './pages/ProductDetail';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
       {
         path: "/nike-clone/check-out",
         element: <Checkout />,
+      },
+      {
+        path: "/nike-clone/product-detail/productID",
+        element: <ProductDetail />,
+      },
+      {
+        path: "/*",
+        element: <NotFound />,
       }
     ]
   }

@@ -126,7 +126,7 @@ const ProductDetail = () => {
                                 confirmButtonColor: '#000',
                                 confirmButtonText: 'OK'
                               }).then(() => {
-                                window.location.href = `/nike-clone/product-detail/${product.id}`
+                                window.location.hostname = `/nike-clone/product-detail/${product.id}`
                               })
                             } else {
                               Swal.fire({

@@ -15,7 +15,7 @@ const Products: ProductsType[] = [
     id: 'product-1',
     name: 'Nike Court Legacy Next Nature',
     price: 2100,
-    img: '/img/product/product-1.png',
+    img: 'img/product/product-1.png',
     gender: 'รองเท้าผู้ชาย',
     detail: 'Court Legacy เป็นคู่เก่งเหนือกาลเวลาที่มาในลุคสะอาดตา พร้อมยกย่องประวัติศาสตร์ที่หยั่งรากอยู่ในวัฒนธรรมเทนนิส ส่วนบนจากหนังสังเคราะห์แบบมีเท็กซ์เจอร์ การยึดเกาะที่ทนทาน และสีคลาสสิกเสิร์ฟสไตล์ระดับแชมป์',
     size: [

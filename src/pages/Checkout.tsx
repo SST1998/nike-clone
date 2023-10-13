@@ -265,6 +265,7 @@ const Checkout = () => {
                                     confirmButtonColor: '#000',
                                     confirmButtonText: 'OK'
                                   }).then(() => {
+                                    localStorage.removeItem('cart')
                                     window.location.href = '/nike-clone/';
                                   })
                                 }}

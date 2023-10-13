@@ -100,7 +100,7 @@ const ProductCarousel = ({title}:TitleProp) => {
           {productData.map((data, index) => {
             return (
               <React.Fragment key={data.id}>
-                <Link underline='none' href={`/product-detail/${data.id}`}>
+                <Link underline='none' href={`/nike-clone/product-detail/${data.id}`}>
                   <Box sx={{ width: '100%' }}>
                     <Box className={`keen-slider__slide number-slide${index}`}>
                       <Box sx={{ bgcolor: '#f6f6f6' }}>

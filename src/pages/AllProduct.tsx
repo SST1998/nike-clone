@@ -18,7 +18,7 @@ const AllProduct = () => {
                 return(
                   <React.Fragment key={index}>
                     <Grid item xs={6} md={4}>
-                      <Link to = {`/product-detail/${data.id}`} style={{ textDecoration: 'none' }}>
+                      <Link to = {`/nike-clone/product-detail/${data.id}`} style={{ textDecoration: 'none' }}>
                         <Box sx={{ width: '100%' }}>
                           <Box className={`keen-slider__slide number-slide${index}`}>
                             <Box sx={{ bgcolor: '#f6f6f6' }}>

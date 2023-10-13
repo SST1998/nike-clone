@@ -1,0 +1,26 @@
+.arrow {
+  width: 20px;
+  height: auto;
+  /* position: absolute; */
+  /* top: 65%; */
+  /* transform: translateY(-50%); */
+  /* -webkit-transform: translateY(-50%); */
+  fill: #000;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.arrow--left {
+  margin-right: 0.5rem;
+}
+/* 
+.arrow--right {
+  left: auto;
+  right: 1.5rem;
+} */
+
+.arrow--disabled {
+  fill: #ccc;
+}

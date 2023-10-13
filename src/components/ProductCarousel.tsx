@@ -105,7 +105,7 @@ const ProductCarousel = ({title}:TitleProp) => {
                   <Box sx={{ width: '100%' }}>
                     <Box className={`keen-slider__slide number-slide${index}`}>
                       <Box sx={{ bgcolor: '#f6f6f6' }}>
-                        <img src={data.img} alt={`product-${data.id}`} style={{ maxWidth: '20rem', width:'100%', height: 'auto' }}/>
+                        <img src={`https://sst1998.github.io/nike-clone/${data.img}`} alt={`product-${data.id}`} style={{ maxWidth: '20rem', width:'100%', height: 'auto' }}/>
                       </Box>
                       <Box sx={{ 
                           color: '#000', 

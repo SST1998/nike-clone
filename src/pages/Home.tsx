@@ -8,7 +8,7 @@ const Home = () => {
       <Box>
         <Container>
           <Box sx={{ width:'100%', height: 'auto', overflow: 'hidden' }}>
-            <img src="img/home-main-product.png" style={{ width:'100%', height: 'auto' }}/>
+            <img src="img/home-main-product.webp" style={{ width:'100%', height: 'auto' }}/>
           </Box>
         </Container>
         <Box>

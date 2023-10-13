@@ -1,8 +1,9 @@
 // ** React Imports
 import * as React from 'react'
+import { Link } from 'react-router-dom';
 
 // ** MUI Imports
-import { Box, Button, Checkbox, Container, FormControl, FormControlLabel, Grid, Link, TextField, Typography } from "@mui/material"
+import { Box, Button, Checkbox, Container, FormControl, FormControlLabel, Grid, TextField, Typography } from "@mui/material"
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 
 // ** Context
@@ -232,7 +233,7 @@ const Checkout = () => {
                               }  
                               label={
                                 <>
-                                การคลิก "สั่งซื้อ" หมายความว่าคุณยอมรับ<Link color="#7a7a7a" href='*' target='_blank'>{'ข้อกำหนดและเงื่อนไข<#endhrefของ eShopWorld'}</Link>
+                                การคลิก "สั่งซื้อ" หมายความว่าคุณยอมรับ<Link style={{ color:"#7a7a7a", textDecorationColor: '#000'}} to='#' target='_blank'>{'ข้อกำหนดและเงื่อนไขของ eShopWorld'}</Link>
                                 </>
                               } 
                               sx={{ 
@@ -264,7 +265,7 @@ const Checkout = () => {
                                     confirmButtonColor: '#000',
                                     confirmButtonText: 'OK'
                                   }).then(() => {
-                                    window.location.href = '/';
+                                    window.location.href = '/nike-clone';
                                   })
                                 }}
                                 variant='contained'
@@ -315,7 +316,7 @@ const Checkout = () => {
                               }  
                               label={
                                 <>
-                                การคลิก "ชำระด้วย PayPal" หมายความว่าคุณยอมรับข้อกำหนดและเงื่อนไข<Link color="#7a7a7a" href='https://www.eshopworld.com/shoppers/help/terms-and-conditions-of-sale-th/' target='_blank'> ของ eShopWorld.</Link>
+                                การคลิก "ชำระด้วย PayPal" หมายความว่าคุณยอมรับข้อกำหนดและเงื่อนไข<Link style={{ color:"#7a7a7a", textDecorationColor: '#000'}} to='https://www.eshopworld.com/shoppers/help/terms-and-conditions-of-sale-th/' target='_blank'> ของ eShopWorld.</Link>
                                 </>
                               } 
                               sx={{ 

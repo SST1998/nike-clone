@@ -120,7 +120,7 @@ const ProductDetail = () => {
                             if (size != 0) {
                               handleGetProduct(product)
                               Swal.fire({
-                                title: 'Size is selected.',
+                                title: 'Add to cart successfully.',
                                 text: "",
                                 icon: 'success',
                                 confirmButtonColor: '#000',

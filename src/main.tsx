@@ -12,11 +12,11 @@ import ProductDetail from './pages/ProductDetail';
 
 const router = createBrowserRouter([
   {
-    path: "/nike-clone",
+    path: "/nike-clone/",
     element: <App />,
     children: [
       {
-        path: "/nike-clone",
+        path: "/nike-clone/",
         element: <Home />,
       },
       {

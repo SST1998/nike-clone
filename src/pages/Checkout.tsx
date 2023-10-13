@@ -265,7 +265,7 @@ const Checkout = () => {
                                     confirmButtonColor: '#000',
                                     confirmButtonText: 'OK'
                                   }).then(() => {
-                                    window.location.href = '/nike-clone';
+                                    window.location.href = '/nike-clone/';
                                   })
                                 }}
                                 variant='contained'

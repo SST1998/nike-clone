@@ -13,11 +13,11 @@ import { Icon } from '@iconify/react';
 import { styled, alpha } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
-import { Autocomplete, Badge, Link } from '@mui/material';
+import { Autocomplete, Badge } from '@mui/material';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import { GetProductType } from '../pages/ProductDetail';
 import { ProductContext, ProductsType } from '../@fakeDB/products';
-
+import { Link } from 'react-router-dom';
 interface PageType {
   name: string
   path: string
@@ -26,7 +26,7 @@ interface PageType {
 const pages:PageType[] = [
   {
     name: 'สินค้าทั้งหมด',
-    path: '/all-product'
+    path: '/nike-clone/all-product'
   }
 ]
 
@@ -132,18 +132,20 @@ export const NavAppBar = () => {
             {/* Nav Menu */}
             <Box sx={{ display: { xs: 'none', md: 'flex' } }} >
               {pages.map((page, index) => (
-                <Link href={page.path} underline='none' key={index}>
-                  <Button
-                    onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: '#000', display: 'block',
-                      '&:hover': {
-                        bgcolor: '#ccc'
-                      }
-                    }}
-                  >
-                    {page.name}
-                  </Button>
-                </Link>
+                <React.Fragment key={index}>
+                  <Link to={page.path} style={{ textDecoration: 'none' }}>
+                    <Button
+                      onClick={handleCloseNavMenu}
+                      sx={{ my: 2, color: '#000', display: 'block',
+                        '&:hover': {
+                          bgcolor: '#ccc'
+                        }
+                      }}
+                    >
+                      {page.name}
+                    </Button>
+                  </Link>
+                </React.Fragment>
               ))}
             </Box>
 
@@ -160,9 +162,11 @@ export const NavAppBar = () => {
                 renderOption={(props, option: ProductsType) => {
                   return(
                     <li {...props} key={option.id}>
-                      <Link sx={{color: '#000', display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} underline='none' href={`/product-detail/${option.id}`}>
+                      <Link to ='/nike-clone'>
+                        <Box sx={{color: '#000', display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
                         <ImgStyle src={option.img}/>
                         <Typography variant='subtitle1' sx={{ ml:2 }}>{option.name}</Typography>
+                        </Box>
                       </Link>
                     </li>
                   )
@@ -236,7 +240,7 @@ export const NavAppBar = () => {
 
             {/* Bag */}
             <Box>
-              <Link underline='none' href={`/cart`} sx={{ color: '#000' }}>
+              <Link to={`/nike-clone/cart`} style={{ textDecoration: 'none' }}>
                 <IconButton>
                   <Badge badgeContent={countCart}
                     sx={{ 

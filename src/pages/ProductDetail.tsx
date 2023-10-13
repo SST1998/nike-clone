@@ -73,7 +73,7 @@ const ProductDetail = () => {
                 {/* IMG */}
                 <Grid item xs={12} md={6}>
                   <Box sx={{ position: 'sticky', top: '1rem' }}>
-                    <img src={`${product.img}`} style={{ maxWidth: '40rem', width:'100%', height: 'auto', borderRadius: '1rem' }}/>
+                    <img src={`/${product.img}`} style={{ maxWidth: '40rem', width:'100%', height: 'auto', borderRadius: '1rem' }}/>
                   </Box>
                 </Grid>
 

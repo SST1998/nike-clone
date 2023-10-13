@@ -117,7 +117,7 @@ export const NavAppBar = () => {
             <Typography
               variant="h6"
               component="a"
-              href="/"
+              href="/nike-clone"
               sx={{
                 fontFamily: 'monospace',
                 fontWeight: 700,

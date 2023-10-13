@@ -10,7 +10,7 @@ const NotFound = () => {
           <Typography variant="h6">This page could not be found.</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Link to={'/'}>
+          <Link to={'/nike-clone'}>
             <Button  
               sx={{ 
                 p: 2,

@@ -162,7 +162,7 @@ export const NavAppBar = () => {
                 renderOption={(props, option: ProductsType) => {
                   return(
                     <li {...props} key={option.id}>
-                      <Link to ={`/nike-clone/product-detail/${option.id}`} style={{ textDecoration: 'none' }}>
+                      <Link to ={`https://sst1998.github.io/nike-clone/product-detail/${option.id}`} style={{ textDecoration: 'none' }}>
                         <Box sx={{color: '#000', display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
                         <ImgStyle src={option.img}/>
                         <Typography variant='subtitle1' sx={{ ml:2 }}>{option.name}</Typography>

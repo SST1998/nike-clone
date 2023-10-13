@@ -231,9 +231,11 @@ export const NavAppBar = () => {
                 }}
               >
                 {pages.map((page, index) => (
-                  <MenuItem key={index} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page.name}</Typography>
-                  </MenuItem>
+                  <Link to={page.path} style={{ textDecoration: 'none' }}>
+                    <MenuItem key={index} onClick={handleCloseNavMenu}>
+                      <Typography textAlign="center">{page.name}</Typography>
+                    </MenuItem>
+                  </Link>
                 ))}
               </Menu>
             </Box>

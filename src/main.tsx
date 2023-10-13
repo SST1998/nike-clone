@@ -4,6 +4,9 @@ import './index.css'
 import { App } from './App'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
+import AllProduct from './pages/AllProduct';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 
 const router = createBrowserRouter([
   {
@@ -16,15 +19,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/nike-clone/all-product",
-        element: <Home />,
+        element: <AllProduct />,
       },
       {
         path: "/nike-clone/cart",
-        element: <Home />,
+        element: <Cart />,
       },
       {
         path: "/nike-clone/check-out",
-        element: <Home />,
+        element: <Checkout />,
       }
     ]
   }

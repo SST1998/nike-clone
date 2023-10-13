@@ -210,7 +210,7 @@ const Cart = () => {
                   }}
                 >
                   {/* Checkout */}
-                  <Link to={'/nike-clone/check-out'} style={{ textDecoration: 'none' }}>
+                  <Link to={'/nike-clone/checkout'} style={{ textDecoration: 'none', width: '100%' }}>
                     <Button 
                       disabled={data.length === 0 ?  true : false}
                       variant='contained'

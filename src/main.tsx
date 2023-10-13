@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         element: <Cart />,
       },
       {
-        path: "/nike-clone/check-out",
+        path: "/nike-clone/checkout",
         element: <Checkout />,
       },
       {

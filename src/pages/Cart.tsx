@@ -210,33 +210,34 @@ const Cart = () => {
                   }}
                 >
                   {/* Checkout */}
-                  <Button 
-                    disabled={data.length === 0 ?  true : false}
-                    variant='contained'
-                    href='/checkout'
-                    sx={{ 
-                      p:3,
-                      width: '100%',
-                      borderRadius: '3rem',
-                      bgcolor: '#000',
-                      color: '#fff',
-                      boxShadow: 'none',
-                      '&:hover': {
-                        opacity: 0.5,
+                  <Link to={'/nike-clone/check-out'} style={{ textDecoration: 'none' }}>
+                    <Button 
+                      disabled={data.length === 0 ?  true : false}
+                      variant='contained'
+                      sx={{ 
+                        p:3,
+                        width: '100%',
+                        borderRadius: '3rem',
                         bgcolor: '#000',
+                        color: '#fff',
                         boxShadow: 'none',
-                      },
-                      '&:focus': {
-                        bgcolor: 'none',
-                        borderColor: '#000',
-                        boxShadow: 'none',
-                      },
-                    }}
-                  >
-                    <Typography variant='body1' sx={{ fontWeight: 900 }}>
-                      เช็คเอาท์
-                    </Typography>
-                  </Button>
+                        '&:hover': {
+                          opacity: 0.5,
+                          bgcolor: '#000',
+                          boxShadow: 'none',
+                        },
+                        '&:focus': {
+                          bgcolor: 'none',
+                          borderColor: '#000',
+                          boxShadow: 'none',
+                        },
+                      }}
+                    >
+                      <Typography variant='body1' sx={{ fontWeight: 900 }}>
+                        เช็คเอาท์
+                      </Typography>
+                    </Button>
+                  </Link>
 
                   {/* Paypal */}
                   <Button 

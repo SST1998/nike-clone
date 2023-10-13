@@ -1,8 +1,9 @@
 // ** React Imports
 import * as React from 'react'
+import { Link } from 'react-router-dom';
 
 // ** MUI Imports
-import { Box, Button, Container, Grid, IconButton, Link, Typography } from "@mui/material"
+import { Box, Button, Container, Grid, IconButton, Typography } from "@mui/material"
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 
 // ** Custom Components
@@ -82,7 +83,7 @@ const Cart = () => {
                         py: 3
                       }}
                     >
-                      <Link underline='none' href={`/nike-clone/product-detail/${item.producID}`}>
+                      <Link style={{ textDecoration: 'none' }} to={`/nike-clone/product-detail/${item.producID}`}>
                         <img src={item.img} alt={`product-1`} style={{ maxWidth: '10rem', width:'100%', height: 'auto' }}/>
                       </Link>
                       <Box sx={{ ml:3, width: '100%' }}>
@@ -93,7 +94,7 @@ const Cart = () => {
                             mb: 1
                           }}
                         >
-                          <Link underline='none' href={`/nike-clone/product-detail/${item.producID}`}>
+                          <Link style={{ textDecoration: 'none' }} to={`/nike-clone/product-detail/${item.producID}`}>
                             <Typography sx={{ color: '#000', fontWeight: 900 }} variant='subtitle1' align='left'>{item.productname}</Typography>
                           </Link>  
                           <Typography sx={{ color: '#000', fontWeight: 900 }} variant='subtitle1' align='right'>{item.price.toLocaleString('th-TH', { style: 'currency', currency: 'THB', minimumFractionDigits: 0, maximumFractionDigits: 0  })}</Typography>

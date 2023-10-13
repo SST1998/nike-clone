@@ -1,9 +1,10 @@
 // ** React Imports
 import * as React from 'react'
+import { Link } from 'react-router-dom'
 
 // ** MUI Imports
 import Box from '@mui/material/Box'
-import { Link, Typography } from '@mui/material'
+import { Typography } from '@mui/material'
 
 // ** Third Party Components
 import { useKeenSlider } from 'keen-slider/react'
@@ -100,7 +101,7 @@ const ProductCarousel = ({title}:TitleProp) => {
           {productData.map((data, index) => {
             return (
               <React.Fragment key={data.id}>
-                <Link underline='none' href={`/nike-clone/product-detail/${data.id}`}>
+                <Link style={{ textDecoration: 'none' }} to={`/nike-clone/product-detail/${data.id}`}>
                   <Box sx={{ width: '100%' }}>
                     <Box className={`keen-slider__slide number-slide${index}`}>
                       <Box sx={{ bgcolor: '#f6f6f6' }}>

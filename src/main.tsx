@@ -35,10 +35,10 @@ const router = createBrowserRouter([
         path: "/nike-clone/product-detail/productID",
         element: <ProductDetail />,
       },
-      {
-        path: "/*",
-        element: <NotFound />,
-      }
+      // {
+      //   path: "/*",
+      //   element: <NotFound />,
+      // }
     ]
   }
 ]);
